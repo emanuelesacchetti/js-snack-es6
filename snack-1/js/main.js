@@ -38,10 +38,18 @@ biciclette.forEach(function(elemento, indice){
 });
 
 console.log(bici);   //[5, 7, 8, 6]
-
+let min = 1000;
 for ( let i = 0; i < bici.length; i++){
-    
-    if(bici[i] < bici[i+1,i+2,i+3]){
-        console.log(biciclette[0])
+    if(bici[i] < min){
+        min = bici[i]
     }
 }
+console.log(min)
+for ( let i = 0; i < bici.length; i++){
+    if(min == bici[i]){
+        console.log(biciclette[i])
+    }
+}
+
+
+//console.log(biciclette[i])
