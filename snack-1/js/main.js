@@ -18,7 +18,7 @@ const biciclette = [
     }
 ];
 
-
+/*
 const {nome, peso} = biciclette;
 console.log(nome, peso);
 
@@ -28,10 +28,10 @@ biciclette.forEach(function(elemento, indice){
     
     bici += peso
     console.log(bici);
-});
+});*/
 
 
-/*
+
 let bici = [];
 biciclette.forEach(function(elemento, indice){
     bici.push(elemento['peso']);
@@ -41,8 +41,7 @@ console.log(bici);   //[5, 7, 8, 6]
 
 for ( let i = 0; i < bici.length; i++){
     
-    if(bici[i] < bici[1]){
-        console.log(i)
+    if(bici[i] < bici[i+1,i+2,i+3]){
+        console.log(biciclette[0])
     }
 }
-*/
