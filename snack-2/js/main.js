@@ -36,11 +36,13 @@ console.log(squadre);
 
 const teamArray = [];
 
-squadre.forEach(function(element){
-    const {nome, falli_subiti} = element;
-    teamArray.push(nome + ' ' + falli_subiti);
-})
+squadre.forEach(squadra => {
+    const {nome, falli_subiti} = squadra;
+    teamArray.push({nome, falli_subiti});
+});
+
 console.log(teamArray);
+
 
 function generatoreNumeroCasuale(min, max){
     return Math.floor(Math.random() * (max - min +1));
